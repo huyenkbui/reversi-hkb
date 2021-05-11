@@ -12,32 +12,61 @@
 
     <style>
       body {
-        background-color: darkseagreen;
+        background-color: #f5ebd7;
       }
+
+     .btn-secondary {
+        background-color: #f5c15b;
+        color: inherit;
+        font-weight: 600;
+        border: 1px solid #eda71a;
+        border-radius: 5px;
+        width: 150px;
+      }
+
+      .btn-secondary:hover {
+         background-color: #eda71a;
+         border: 1px solid #f5c15b;
+         border-radius: 5px;
+         width: 150px;
+       }
     </style>
 
     <title>Reversi by HKB</title>
   </head>
   <body>
 
-    <div class="container-fluid" >
-      <div class="row m-3">
+    <div class="container-fluid">
+      <div class="row m-5">
         <div class="col text-center">
-          <a class="btn btn-success text-nowrap" href="about.html">About</a>
-        </div>
-        <div class="col text-center">
-          <a class="btn btn-success text-nowrap" href="https://en.wikipedia.org/wiki/Reversi" target="_blank">Rules</a>
+          <h1>Reversi</h1>
+          <h3>Aang!edition</h3>
         </div>
       </div>
 
-      <div class="row m-3">
+      <div class="row m-5">
+        <div class="col text-center">
+          <!-- Empty placeholder to center buttons -->
+        </div>
+        <div class="col text-center">
+          <a class="btn btn-secondary text-nowrap btn-sm" href="about.html">About</a>
+        </div>
+        <div class="col text-center">
+          <a class="btn btn-secondary text-nowrap btn-sm" href="https://en.wikipedia.org/wiki/Reversi" target="_blank">Rules</a>
+        </div>
+        <div class="col text-center">
+          <!-- Empty placeholder to center buttons -->
+        </div>
+      </div>
+
+      <div class="row m-5">
         <div class="col text-center">
           <img class="img-fluid" src="assets/images/top-splash.gif" alt="Reversi Logo 1"/>
         </div>
       </div>
 
-      <div class="row justify-content-center align-items-center m-3">
-        <div class="col-4">
+      <div class="row justify-content-center align-items-center m-5">
+        <div class="col-6">
           <div class="input-group">
             <span class="input-group-text" id="displayName">Name</span>
             <input type="text" class="form-control text-nowrap" id="nameInput" placeholder="Enter your display name" aria-label="Enter your display name for use while playing Reversi" aria-describedby="displayName"/>
@@ -46,7 +75,7 @@
         </div>
       </div>
 
-      <div class="row m-3">
+      <div class="row m-5">
         <div class="col text-center">
           <img class="img-fluid" src="assets/images/bot-splash.gif" alt="Reversi Logo 2"/>
         </div>

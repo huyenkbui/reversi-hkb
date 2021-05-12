@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 
+    <!-- Inline CSS -->
     <style>
       body {
         background-color: #f5ebd7;
@@ -31,6 +32,14 @@
          width: 150px;
        }
     </style>
+
+    <!-- Inline Javascript -->
+    <script>
+      function goToLobby() {
+        let username = $('#nameInput').val();
+        window.location.href = "lobby.html?username="+username;
+      }
+    </script>
 
     <title>Reversi by HKB</title>
   </head>
@@ -70,7 +79,7 @@
           <div class="input-group">
             <span class="input-group-text" id="displayName">Name</span>
             <input type="text" class="form-control text-nowrap" id="nameInput" placeholder="Enter your display name" aria-label="Enter your display name for use while playing Reversi" aria-describedby="displayName"/>
-            <button type="submit" class="btn btn-primary text-nowrap" id="lobbyButton" onclick="window.location='lobby.html'">Enter Lobby</button>
+            <button type="submit" class="btn btn-primary text-nowrap" id="lobbyButton" onclick="goToLobby()">Enter Lobby</button>
           </div>
         </div>
       </div>
@@ -80,9 +89,14 @@
           <img class="img-fluid" src="assets/images/bot-splash.gif" alt="Reversi Logo 2"/>
         </div>
       </div>
+
     </div>
 
+    <!-- Bootstrap library -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+    <!-- Jquery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
 
   </body>
 </html>

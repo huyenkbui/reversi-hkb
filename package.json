@@ -27,6 +27,6 @@
   "homepage": "https://github.com/huyenkbui/reversi-hkb#readme",
   "dependencies": {
     "node-static": "^0.7.11",
-    "socket.io": "^4.0.2"
+    "socket.io": "^4.1.1"
   }
 }

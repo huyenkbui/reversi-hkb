@@ -11,9 +11,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 
     <style>
-      .headerrow {
+      body {
+        background-color: #f5ebd7;
+        width: 60%;
+        margin: auto;
+      }
+
+    .headerrow {
         background-color: #f5c15b;
         border: 1px solid #eda71a;
+      }
+
+      .join_room_response {
+        background-color: #f5c15b;
+        margin: 10px 1px;
+      }
+
+      .chat_message {
+        margin: 10px 1px;
+        font-size: 125%;
+        color: #333;
       }
     </style>
 
@@ -30,9 +47,18 @@
 
       <div class="row m-3">
         <div class="col">
+          <div class="row justify-content-center align-items-center m-5">
+            <div class="col-6">
+              <div class="input-group">
+                <input type="text" class="form-control text-nowrap" id="chatMessage" placeholder="Say something..." aria-label="Enter your message to send to the chat room"/>
+                <button type="submit" class="btn btn-primary text-nowrap" id="chatButton" onclick="sendChatMessage()">Send</button>
+              </div>
+            </div>
+          </div>
+
           <h4>Messages</h4>
           <div id="messages">
-
+            <!-- EMPTY FOR NOW -->
           </div>
         </div>
       </div>
@@ -44,6 +70,9 @@
 
     <!-- Jquery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+
+    <!-- Socket.io library -->
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js" integrity="sha384-LzhRnpGmQP+lOvWruF/lgkcqD+WDVt9fU3H4BWmwP5u5LTmkUGafMcpZKNObVMLU" crossorigin="anonymous"></script>
 
     <!-- Main.js library -->
     <script src="assets/js/main.js"></script>

@@ -1,0 +1,85 @@
+body {
+  background-color: #f5ebd7;
+  margin: auto;
+}
+
+.headerrow {
+  background-color: #f5c15b;
+  border: 1px solid #eda71a;
+}
+
+.join_room_response {
+  background-color: #f5c15b;
+  margin: 10px 1px;
+  padding: 5px 10px;
+}
+
+.left_room_response {
+  background-color: #d6d6d6;
+  margin: 10px 1px;
+  padding: 5px 10px;
+}
+
+table#gameBoard {
+  border: 4px solid #fff;
+  margin: 0px;
+  padding: 0px;
+}
+
+table#gameBoard td {
+  background-color: #fff;
+  border: 1px solid #eda71a;
+  margin: 0px;
+  padding: 2px;
+}
+
+#whiteSum, #blackSum {
+  font-weight: 500;
+  font-size: 120%;
+  margin: 5px;
+  padding: 5px;
+}
+
+#whiteSum {
+  background-color: #fff;
+  color: #000;
+}
+
+#blackSum {
+  background-color: #000;
+  color: #fff;
+}
+
+td.hoveredOver:hover {
+  background-image: url('/assets/images/tokens/hover.gif');
+  background-size: 54px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#messagePane {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.chat_message {
+  margin: 10px 1px;
+  font-size: 125%;
+  color: #333;
+}
+
+.btn-secondary {
+   background-color: #f5c15b;
+   color: inherit;
+   font-weight: 600;
+   border: 1px solid #eda71a;
+   border-radius: 5px;
+   width: auto;
+ }
+
+ .btn-secondary:hover {
+    background-color: #eda71a;
+    border: 1px solid #f5c15b;
+    border-radius: 5px;
+    width: auto;
+  }

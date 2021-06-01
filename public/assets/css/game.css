@@ -20,6 +20,10 @@ body {
   padding: 5px 10px;
 }
 
+#messages p {
+  font-size: 0.8em;
+}
+
 table#gameBoard {
   border: 4px solid #fff;
   margin: 0px;
@@ -52,7 +56,7 @@ table#gameBoard td {
 
 td.hoveredOver:hover {
   background-image: url('/assets/images/tokens/hover.gif');
-  background-size: 54px;
+  background-size: 56px;
   background-position: center;
   background-repeat: no-repeat;
 }

@@ -47,8 +47,6 @@ function makeInvitedButton(socket_id) {
   let newHTML = "<button type='button' class='btn btn-secondary'>Invited</button>";
   let newNode = $(newHTML);
 
-  /* newNode.on('mouseover', makeUninviteButton()); */
-
   newNode.click( () => {
     let payload = {
       requested_user: socket_id
@@ -99,16 +97,6 @@ socket.on('invite_response', (payload) => {
 
   let newNode = makeInvitedButton(payload.socket_id);
   $('.socket_' + payload.socket_id + ' button').replaceWith(newNode);
-
-  /* $('.socket_' + payload.socket_id + ' button').on('mouseover', () => {
-    $('.socket_' + payload.socket_id + ' button').toggle( () => {
-      let newNode = makeUninviteButton(payload.socket_id);
-      $('.socket_' + payload.socket_id + ' button').replaceWith(newNode);
-    }, () => {
-      let newNode = makeInvitedButton(payload.socket_id);
-      $('.socket_' + payload.socket_id + ' button').replaceWith(newNode);
-    });
-  }); */
 });
 
 socket.on('invited', (payload) => {
@@ -203,7 +191,7 @@ socket.on('join_room_response', (payload) => {
   nodeB.addClass("col");
   nodeB.addClass("text-end");
   nodeB.addClass("socket_" + payload.socket_id);
-  nodeB.append('<h4>' + payload.username+'</h4>');
+  nodeB.append('<h5>' + payload.username+'</h5>');
 
   let nodeC = $('<div></div>');
   nodeC.addClass("col");

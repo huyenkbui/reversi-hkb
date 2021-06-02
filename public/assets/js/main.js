@@ -408,10 +408,22 @@ socket.on('game_update', (payload) => {
       /* Set up interactivity */
       $('#' + row + '_' + column).off('click');
       $('#' + row + '_' + column).removeClass('hoveredOver');
+      $('#' + row + '_' + column).removeClass('hoveredWhite');
+      $('#' + row + '_' + column).removeClass('hoveredBlack');
 
       if (payload.game.whose_turn === my_color) {
         if (payload.game.legal_moves[row][column] === my_color.substr(0, 1)){
-          $('#' + row + '_' + column).addClass('hoveredOver');
+
+          if (my_color === 'white') {
+            $('#' + row + '_' + column).addClass('hoveredWhite');
+          }
+          else if (my_color === 'black') {
+            $('#' + row + '_' + column).addClass('hoveredBlack');
+          }
+          else {
+            $('#' + row + '_' + column).addClass('hoveredOver');
+          };
+
           $('#' + row + '_' + column).click(((r, c) => {
             return (() => {
               let payload = {

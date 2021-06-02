@@ -54,6 +54,20 @@ table#gameBoard td {
   color: #fff;
 }
 
+td.hoveredBlack:hover {
+  background-image: url('/assets/images/tokens/black.gif');
+  background-size: 56px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+td.hoveredWhite:hover {
+  background-image: url('/assets/images/tokens/white.gif');
+  background-size: 56px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 td.hoveredOver:hover {
   background-image: url('/assets/images/tokens/hover.gif');
   background-size: 56px;
